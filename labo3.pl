@@ -24,7 +24,6 @@ process_line(Line):-
 main :-
     ensure_loaded(tokenizer),
     ensure_loaded(parser),
-    %open('example_test.txt', read, File),
     open('examples_birth_date.txt', read, File),
     process_file(File),
     close(File),
